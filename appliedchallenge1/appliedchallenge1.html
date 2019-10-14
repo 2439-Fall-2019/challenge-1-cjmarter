@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cole Marter | INFO 2439 | Applied Challenge #1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial scale=1">
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" href="_css/appliedchallenge1.css">
+<link rel="stylesheet" href="ctheme1/themes/theme1.min.css" />
+<link rel="stylesheet" href="ctheme1/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+
+  </head>
+<body>
+<!-- Cole Marter
+     appliedchallenge1.htm
+     INFO2439
+     Thoendel
+     10/13/19
+-->
+<div data-role="page" id="page1" data-add-back-btn="true" data-title="Cole Marter | INFO 2439 | Assignment #2">
+  <div data-role="header" data-position="fixed">
+  <p>
+      <a href="" data-rel="back">Go back</a>
+      </p>
+      <h1>Applied Challenge #1</h1>
+    </div>
+<h2>Metropolitan Community College<br>Sage Bistro</h2>
+  <ul data-role="listview">
+  <li><a data-ajax="false" href="#page2">Google Maps</a></li>
+  <li><a data-ajax="false" href="#page3">Survey</a></li>
+  <li><a href="https://www.mccneb.edu/getattachment/Academics/Programs-of-Study/Culinary-Hospitality-and-Horticulture/Culinary-Arts-and-Management/Sage-Student-Bistro/Sage-Lunch-Menu-19FA-(1).pdf.aspx?lang=en-US">Menu</a></li>
+<li><a href="https://www.opentable.com/sage-student-bistro-institute-for-the-culinary-arts-reservations-omaha?restref=52120&lang=en-US">Online Reservation</a></li>
+  </ul>
+  <div data-role="footer" data-position="fixed">
+  <h4>Created By: <a href="mailto:cjmarter.mail.mccneb.edu">Cole Marter</a><br></h4>
+  </div>
+  </div>
+  <div data-role="page" id="page2">
+  <div data-role="header">
+      <p>
+          <a href="" data-rel="back">Go back</a>
+          </p>
+		  <h1>Google Maps Location</h1>
+		  </div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2997.1978183474675!2d-95.959561!3d41.30456!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x879391c1aa5cd7f9%3A0xb5667c78b30970d7!2s5730%20N%2030th%20St%2C%20Omaha%2C%20NE%2068111!5e0!3m2!1sen!2sus!4v1571019320716!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+  <div data-role="footer" data-position="fixed">
+      <h4>Created By: <a href="mailto:cjmarter.mail.mccneb.edu">Cole Marter</a><br></h4>
+</div>
+</div>
+<div data-role="page" id="page3">
+    <div data-role="header" position="fixed">
+        <p>
+            <a href="" data-rel="back">Go back</a>
+           		   </p>
+	  <h1>Bistro Customer Survey</h1>
+    </div>
+	<form action="http://emthoendel.faculty.mccinfo.net/2439/bistrosurvey_insert.php" method="post">
+	<fieldset data-role="controlgroup">
+ <legend>How Would You Rate Your Meal Today?</legend>
+<label for="meal_rate">Meal Rate</label>
+<select name="meal_rate" id="meal_rate">
+<option value="Poor">Poor</option>
+<option value="Needs Work">Needs Work</option>
+<option value="Fair">Fair</option>
+<option value="Good">Good</option>
+<option value="Excellent">Excellent</option>
+</select>
+<fieldset data-role="controlgroup">
+ <legend>How Would You Rate Your Service Today?</legend>
+<label for="service_rate">Service Rate</label>
+<select name="service_rate" id="service_rate">
+<option value="Poor">Poor</option>
+<option value="Needs Work">Needs Work</option>
+<option value="Fair">Fair</option>
+<option value="Good">Good</option>
+<option value="Excellent">Excellent</option>
+</select>
+<fieldset data-role="controlgroup">
+ <legend>How Would You Rate Your Overall Experience Today?</legend>
+<label for="overall_exp">Overall Experience</label>
+<select name="overall_exp" id="overall_exp">
+<option value="Poor">Poor</option>
+<option value="Needs Work">Needs Work</option>
+<option value="Fair">Fair</option>
+<option value="Good">Good</option>
+<option value="Excellent">Excellent</option>
+</select>
+<fieldset data-role="controlgroup" data-type="horizontal">
+<legend>Would You Recommend The Bistro To A Friend?</legend>
+<input type="checkbox" name="recommend_rest" id="yes" value="Yes">
+<label for="yes">Yes</label>
+<input type="checkbox" name="recommend_rest" id="no" value="No">
+<label for="no">No</label>
+</fieldset>
+<div class="ui-field-contain">
+<label for="name">Name:</label>
+<input type="text" name="bname" id="bname" value="" />
+</div>
+<div class="ui-field-contain">
+<label for="email">Email:</label>
+<input type="text" name="email" id="email" value="" />
+</div>
+<div class="ui-field-contain">
+<input type="submit" name="submit" value="Send" />
+</div>
+</form>
+    <div data-role="footer" data-position="fixed">
+        <h4>Created By: <a href="mailto:cjmarter.mail.mccneb.edu">Cole Marter</a><br></h4>
+  </div>
+  </div>
+  </body>
+  </html>
